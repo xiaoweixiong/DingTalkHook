@@ -1,0 +1,857 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB0206061E18DA0B00D79DC2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0206051E18DA0B00D79DC2 /* Foundation.framework */; };
+		EB0206081E18DA0B00D79DC2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0206071E18DA0B00D79DC2 /* UIKit.framework */; };
+		EB0206121E18DA0B00D79DC2 /* DingTalkDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0206111E18DA0B00D79DC2 /* DingTalkDylib.h */; };
+		EB0206141E18DA0B00D79DC2 /* DingTalkDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0206131E18DA0B00D79DC2 /* DingTalkDylib.m */; };
+		EB0206281E18E64F00D79DC2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0206271E18E64F00D79DC2 /* CoreLocation.framework */; };
+		EB0B1E821E305418007A15A7 /* CLLocationManager+JFUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0B1E7A1E305418007A15A7 /* CLLocationManager+JFUtil.h */; };
+		EB0B1E831E305418007A15A7 /* CLLocationManager+JFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0B1E7B1E305418007A15A7 /* CLLocationManager+JFUtil.m */; };
+		EB0B1E841E305418007A15A7 /* NSBundle+JFUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0B1E7D1E305418007A15A7 /* NSBundle+JFUtil.h */; };
+		EB0B1E851E305418007A15A7 /* NSBundle+JFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0B1E7E1E305418007A15A7 /* NSBundle+JFUtil.m */; };
+		EB0B1E861E305418007A15A7 /* UIApplication+JFUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0B1E801E305418007A15A7 /* UIApplication+JFUtil.h */; };
+		EB0B1E871E305418007A15A7 /* UIApplication+JFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0B1E811E305418007A15A7 /* UIApplication+JFUtil.m */; };
+		EB0B1E8C1E305420007A15A7 /* DTGPSButton.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0B1E8A1E305420007A15A7 /* DTGPSButton.h */; };
+		EB0B1E8D1E305420007A15A7 /* DTGPSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0B1E8B1E305420007A15A7 /* DTGPSButton.m */; };
+		EB0B1E941E305426007A15A7 /* DTGPSHook.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0B1E8F1E305426007A15A7 /* DTGPSHook.h */; };
+		EB0B1E951E305426007A15A7 /* DTGPSHook.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0B1E901E305426007A15A7 /* DTGPSHook.m */; };
+		EB0B1E961E305426007A15A7 /* DTGPSSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0B1E921E305426007A15A7 /* DTGPSSettingViewController.h */; };
+		EB0B1E971E305426007A15A7 /* DTGPSSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0B1E931E305426007A15A7 /* DTGPSSettingViewController.m */; };
+		EB2BEA0E1E1A0CDD00377579 /* JF_Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = EB2BEA0C1E1A0CDD00377579 /* JF_Helper.h */; };
+		EB2BEA0F1E1A0CDD00377579 /* JF_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2BEA0D1E1A0CDD00377579 /* JF_Helper.m */; };
+		EB2BEA111E1A0E1E00377579 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2BEA101E1A0E1E00377579 /* CoreGraphics.framework */; };
+		EB3A98E01E1CC82200FD269A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3A98DF1E1CC82200FD269A /* MapKit.framework */; };
+		EB6CDFBF1E34B1390080F13F /* UIResponder+JFUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6CDFBD1E34B1390080F13F /* UIResponder+JFUtil.h */; };
+		EB6CDFC01E34B1390080F13F /* UIResponder+JFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6CDFBE1E34B1390080F13F /* UIResponder+JFUtil.m */; };
+		EB7863361E480A1600271B29 /* DTWIFIHook.h in Headers */ = {isa = PBXBuildFile; fileRef = EB7863341E480A1600271B29 /* DTWIFIHook.h */; };
+		EB7863371E480A1600271B29 /* DTWIFIHook.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7863351E480A1600271B29 /* DTWIFIHook.m */; };
+		EB78633B1E480AA200271B29 /* DTWifiSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EB7863391E480AA200271B29 /* DTWifiSettingViewController.h */; };
+		EB78633C1E480AA200271B29 /* DTWifiSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB78633A1E480AA200271B29 /* DTWifiSettingViewController.m */; };
+		EB7863401E480BD200271B29 /* DTWifiModel.h in Headers */ = {isa = PBXBuildFile; fileRef = EB78633E1E480BD200271B29 /* DTWifiModel.h */; };
+		EB7863411E480BD200271B29 /* DTWifiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EB78633F1E480BD200271B29 /* DTWifiModel.m */; };
+		EB78634A1E480E0E00271B29 /* DTWifiHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = EB7863461E480E0E00271B29 /* DTWifiHeaderView.h */; };
+		EB78634B1E480E0E00271B29 /* DTWifiHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7863471E480E0E00271B29 /* DTWifiHeaderView.m */; };
+		EB7863511E48460700271B29 /* DTWifiSettingSession.h in Headers */ = {isa = PBXBuildFile; fileRef = EB78634F1E48460700271B29 /* DTWifiSettingSession.h */; };
+		EB7863521E48460700271B29 /* DTWifiSettingSession.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7863501E48460700271B29 /* DTWifiSettingSession.m */; };
+		EB7863541E48589200271B29 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB7863531E48589200271B29 /* SystemConfiguration.framework */; };
+		EB7863781E487D2500271B29 /* JFFishHook.c in Sources */ = {isa = PBXBuildFile; fileRef = EB7863761E487D2500271B29 /* JFFishHook.c */; };
+		EB7863791E487D2500271B29 /* JFFishHook.h in Headers */ = {isa = PBXBuildFile; fileRef = EB7863771E487D2500271B29 /* JFFishHook.h */; };
+		EBA51C631E8BADB3005B7E8E /* QBAssetsCollectionCheckmarkView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA51C4F1E8BADB3005B7E8E /* QBAssetsCollectionCheckmarkView.h */; };
+		EBA51C641E8BADB3005B7E8E /* QBAssetsCollectionCheckmarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA51C501E8BADB3005B7E8E /* QBAssetsCollectionCheckmarkView.m */; };
+		EBA51C651E8BADB3005B7E8E /* QBAssetsCollectionFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA51C511E8BADB3005B7E8E /* QBAssetsCollectionFooterView.h */; };
+		EBA51C661E8BADB3005B7E8E /* QBAssetsCollectionFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA51C521E8BADB3005B7E8E /* QBAssetsCollectionFooterView.m */; };
+		EBA51C671E8BADB3005B7E8E /* QBAssetsCollectionOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA51C531E8BADB3005B7E8E /* QBAssetsCollectionOverlayView.h */; };
+		EBA51C681E8BADB3005B7E8E /* QBAssetsCollectionOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA51C541E8BADB3005B7E8E /* QBAssetsCollectionOverlayView.m */; };
+		EBA51C691E8BADB3005B7E8E /* QBAssetsCollectionVideoIndicatorView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA51C551E8BADB3005B7E8E /* QBAssetsCollectionVideoIndicatorView.h */; };
+		EBA51C6A1E8BADB3005B7E8E /* QBAssetsCollectionVideoIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA51C561E8BADB3005B7E8E /* QBAssetsCollectionVideoIndicatorView.m */; };
+		EBA51C6B1E8BADB3005B7E8E /* QBAssetsCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA51C571E8BADB3005B7E8E /* QBAssetsCollectionViewCell.h */; };
+		EBA51C6C1E8BADB3005B7E8E /* QBAssetsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA51C581E8BADB3005B7E8E /* QBAssetsCollectionViewCell.m */; };
+		EBA51C6D1E8BADB3005B7E8E /* QBAssetsCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA51C591E8BADB3005B7E8E /* QBAssetsCollectionViewController.h */; };
+		EBA51C6E1E8BADB3005B7E8E /* QBAssetsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA51C5A1E8BADB3005B7E8E /* QBAssetsCollectionViewController.m */; };
+		EBA51C6F1E8BADB3005B7E8E /* QBAssetsCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA51C5B1E8BADB3005B7E8E /* QBAssetsCollectionViewLayout.h */; };
+		EBA51C701E8BADB3005B7E8E /* QBAssetsCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA51C5C1E8BADB3005B7E8E /* QBAssetsCollectionViewLayout.m */; };
+		EBA51C711E8BADB3005B7E8E /* QBImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA51C5D1E8BADB3005B7E8E /* QBImagePickerController.h */; };
+		EBA51C721E8BADB3005B7E8E /* QBImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA51C5E1E8BADB3005B7E8E /* QBImagePickerController.m */; };
+		EBA51C731E8BADB3005B7E8E /* QBImagePickerGroupCell.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA51C5F1E8BADB3005B7E8E /* QBImagePickerGroupCell.h */; };
+		EBA51C741E8BADB3005B7E8E /* QBImagePickerGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA51C601E8BADB3005B7E8E /* QBImagePickerGroupCell.m */; };
+		EBA51C751E8BADB3005B7E8E /* QBImagePickerThumbnailView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA51C611E8BADB3005B7E8E /* QBImagePickerThumbnailView.h */; };
+		EBA51C761E8BADB3005B7E8E /* QBImagePickerThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA51C621E8BADB3005B7E8E /* QBImagePickerThumbnailView.m */; };
+		EBA51C7A1E8BAE59005B7E8E /* DTCameraHook.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA51C781E8BAE59005B7E8E /* DTCameraHook.h */; };
+		EBA51C7B1E8BAE59005B7E8E /* DTCameraHook.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA51C791E8BAE59005B7E8E /* DTCameraHook.m */; };
+		EBA51C7F1E8BB07D005B7E8E /* DTCameraSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA51C7D1E8BB07D005B7E8E /* DTCameraSettingViewController.h */; };
+		EBA51C801E8BB07D005B7E8E /* DTCameraSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA51C7E1E8BB07D005B7E8E /* DTCameraSettingViewController.m */; };
+		EBA51C821E8BC6F7005B7E8E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA51C811E8BC6F7005B7E8E /* AssetsLibrary.framework */; };
+		EBA51C841E8BC700005B7E8E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA51C831E8BC700005B7E8E /* AVFoundation.framework */; };
+		EBA51C8F1E8BD087005B7E8E /* UIImage+JFUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA51C8D1E8BD087005B7E8E /* UIImage+JFUtil.h */; };
+		EBA51C901E8BD087005B7E8E /* UIImage+JFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA51C8E1E8BD087005B7E8E /* UIImage+JFUtil.m */; };
+		EBA51C981E8BD668005B7E8E /* AVCaptureStillImageOutput+JFUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA51C961E8BD668005B7E8E /* AVCaptureStillImageOutput+JFUtil.h */; };
+		EBA51C991E8BD668005B7E8E /* AVCaptureStillImageOutput+JFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA51C971E8BD668005B7E8E /* AVCaptureStillImageOutput+JFUtil.m */; };
+		EBA51C9D1E8BDD85005B7E8E /* ALAsset+JFUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EBA51C9B1E8BDD85005B7E8E /* ALAsset+JFUtil.h */; };
+		EBA51C9E1E8BDD85005B7E8E /* ALAsset+JFUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA51C9C1E8BDD85005B7E8E /* ALAsset+JFUtil.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EB0206021E18DA0B00D79DC2 /* libDingTalkDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libDingTalkDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0206051E18DA0B00D79DC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EB0206071E18DA0B00D79DC2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EB02060C1E18DA0B00D79DC2 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		EB02060D1E18DA0B00D79DC2 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		EB02060F1E18DA0B00D79DC2 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		EB0206111E18DA0B00D79DC2 /* DingTalkDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DingTalkDylib.h; sourceTree = "<group>"; };
+		EB0206131E18DA0B00D79DC2 /* DingTalkDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DingTalkDylib.m; sourceTree = "<group>"; };
+		EB0206171E18DA0B00D79DC2 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/lib/0xdeadfa11; sourceTree = "<group>"; };
+		EB0206271E18E64F00D79DC2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EB0B1E7A1E305418007A15A7 /* CLLocationManager+JFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+JFUtil.h"; sourceTree = "<group>"; };
+		EB0B1E7B1E305418007A15A7 /* CLLocationManager+JFUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+JFUtil.m"; sourceTree = "<group>"; };
+		EB0B1E7D1E305418007A15A7 /* NSBundle+JFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+JFUtil.h"; sourceTree = "<group>"; };
+		EB0B1E7E1E305418007A15A7 /* NSBundle+JFUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+JFUtil.m"; sourceTree = "<group>"; };
+		EB0B1E801E305418007A15A7 /* UIApplication+JFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+JFUtil.h"; sourceTree = "<group>"; };
+		EB0B1E811E305418007A15A7 /* UIApplication+JFUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+JFUtil.m"; sourceTree = "<group>"; };
+		EB0B1E8A1E305420007A15A7 /* DTGPSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTGPSButton.h; sourceTree = "<group>"; };
+		EB0B1E8B1E305420007A15A7 /* DTGPSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTGPSButton.m; sourceTree = "<group>"; };
+		EB0B1E8F1E305426007A15A7 /* DTGPSHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTGPSHook.h; sourceTree = "<group>"; };
+		EB0B1E901E305426007A15A7 /* DTGPSHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTGPSHook.m; sourceTree = "<group>"; };
+		EB0B1E921E305426007A15A7 /* DTGPSSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTGPSSettingViewController.h; sourceTree = "<group>"; };
+		EB0B1E931E305426007A15A7 /* DTGPSSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTGPSSettingViewController.m; sourceTree = "<group>"; };
+		EB2BEA0C1E1A0CDD00377579 /* JF_Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JF_Helper.h; sourceTree = "<group>"; };
+		EB2BEA0D1E1A0CDD00377579 /* JF_Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JF_Helper.m; sourceTree = "<group>"; };
+		EB2BEA101E1A0E1E00377579 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EB3A98DF1E1CC82200FD269A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EB6CDFBD1E34B1390080F13F /* UIResponder+JFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+JFUtil.h"; sourceTree = "<group>"; };
+		EB6CDFBE1E34B1390080F13F /* UIResponder+JFUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+JFUtil.m"; sourceTree = "<group>"; };
+		EB7863341E480A1600271B29 /* DTWIFIHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTWIFIHook.h; sourceTree = "<group>"; };
+		EB7863351E480A1600271B29 /* DTWIFIHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTWIFIHook.m; sourceTree = "<group>"; };
+		EB7863391E480AA200271B29 /* DTWifiSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTWifiSettingViewController.h; sourceTree = "<group>"; };
+		EB78633A1E480AA200271B29 /* DTWifiSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTWifiSettingViewController.m; sourceTree = "<group>"; };
+		EB78633E1E480BD200271B29 /* DTWifiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTWifiModel.h; sourceTree = "<group>"; };
+		EB78633F1E480BD200271B29 /* DTWifiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTWifiModel.m; sourceTree = "<group>"; };
+		EB7863461E480E0E00271B29 /* DTWifiHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTWifiHeaderView.h; sourceTree = "<group>"; };
+		EB7863471E480E0E00271B29 /* DTWifiHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTWifiHeaderView.m; sourceTree = "<group>"; };
+		EB78634F1E48460700271B29 /* DTWifiSettingSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTWifiSettingSession.h; sourceTree = "<group>"; };
+		EB7863501E48460700271B29 /* DTWifiSettingSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTWifiSettingSession.m; sourceTree = "<group>"; };
+		EB7863531E48589200271B29 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EB7863761E487D2500271B29 /* JFFishHook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = JFFishHook.c; sourceTree = "<group>"; };
+		EB7863771E487D2500271B29 /* JFFishHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFFishHook.h; sourceTree = "<group>"; };
+		EBA51C4C1E8BADB3005B7E8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/QBImagePickerController.strings; sourceTree = "<group>"; };
+		EBA51C4D1E8BADB3005B7E8E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/QBImagePickerController.strings; sourceTree = "<group>"; };
+		EBA51C4F1E8BADB3005B7E8E /* QBAssetsCollectionCheckmarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionCheckmarkView.h; sourceTree = "<group>"; };
+		EBA51C501E8BADB3005B7E8E /* QBAssetsCollectionCheckmarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionCheckmarkView.m; sourceTree = "<group>"; };
+		EBA51C511E8BADB3005B7E8E /* QBAssetsCollectionFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionFooterView.h; sourceTree = "<group>"; };
+		EBA51C521E8BADB3005B7E8E /* QBAssetsCollectionFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionFooterView.m; sourceTree = "<group>"; };
+		EBA51C531E8BADB3005B7E8E /* QBAssetsCollectionOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionOverlayView.h; sourceTree = "<group>"; };
+		EBA51C541E8BADB3005B7E8E /* QBAssetsCollectionOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionOverlayView.m; sourceTree = "<group>"; };
+		EBA51C551E8BADB3005B7E8E /* QBAssetsCollectionVideoIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionVideoIndicatorView.h; sourceTree = "<group>"; };
+		EBA51C561E8BADB3005B7E8E /* QBAssetsCollectionVideoIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionVideoIndicatorView.m; sourceTree = "<group>"; };
+		EBA51C571E8BADB3005B7E8E /* QBAssetsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionViewCell.h; sourceTree = "<group>"; };
+		EBA51C581E8BADB3005B7E8E /* QBAssetsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionViewCell.m; sourceTree = "<group>"; };
+		EBA51C591E8BADB3005B7E8E /* QBAssetsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionViewController.h; sourceTree = "<group>"; };
+		EBA51C5A1E8BADB3005B7E8E /* QBAssetsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionViewController.m; sourceTree = "<group>"; };
+		EBA51C5B1E8BADB3005B7E8E /* QBAssetsCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAssetsCollectionViewLayout.h; sourceTree = "<group>"; };
+		EBA51C5C1E8BADB3005B7E8E /* QBAssetsCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAssetsCollectionViewLayout.m; sourceTree = "<group>"; };
+		EBA51C5D1E8BADB3005B7E8E /* QBImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerController.h; sourceTree = "<group>"; };
+		EBA51C5E1E8BADB3005B7E8E /* QBImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerController.m; sourceTree = "<group>"; };
+		EBA51C5F1E8BADB3005B7E8E /* QBImagePickerGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerGroupCell.h; sourceTree = "<group>"; };
+		EBA51C601E8BADB3005B7E8E /* QBImagePickerGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerGroupCell.m; sourceTree = "<group>"; };
+		EBA51C611E8BADB3005B7E8E /* QBImagePickerThumbnailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBImagePickerThumbnailView.h; sourceTree = "<group>"; };
+		EBA51C621E8BADB3005B7E8E /* QBImagePickerThumbnailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBImagePickerThumbnailView.m; sourceTree = "<group>"; };
+		EBA51C781E8BAE59005B7E8E /* DTCameraHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCameraHook.h; sourceTree = "<group>"; };
+		EBA51C791E8BAE59005B7E8E /* DTCameraHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCameraHook.m; sourceTree = "<group>"; };
+		EBA51C7D1E8BB07D005B7E8E /* DTCameraSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCameraSettingViewController.h; sourceTree = "<group>"; };
+		EBA51C7E1E8BB07D005B7E8E /* DTCameraSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCameraSettingViewController.m; sourceTree = "<group>"; };
+		EBA51C811E8BC6F7005B7E8E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		EBA51C831E8BC700005B7E8E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EBA51C8D1E8BD087005B7E8E /* UIImage+JFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JFUtil.h"; sourceTree = "<group>"; };
+		EBA51C8E1E8BD087005B7E8E /* UIImage+JFUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JFUtil.m"; sourceTree = "<group>"; };
+		EBA51C961E8BD668005B7E8E /* AVCaptureStillImageOutput+JFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AVCaptureStillImageOutput+JFUtil.h"; sourceTree = "<group>"; };
+		EBA51C971E8BD668005B7E8E /* AVCaptureStillImageOutput+JFUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AVCaptureStillImageOutput+JFUtil.m"; sourceTree = "<group>"; };
+		EBA51C9B1E8BDD85005B7E8E /* ALAsset+JFUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALAsset+JFUtil.h"; sourceTree = "<group>"; };
+		EBA51C9C1E8BDD85005B7E8E /* ALAsset+JFUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALAsset+JFUtil.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB0205FE1E18DA0B00D79DC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA51C841E8BC700005B7E8E /* AVFoundation.framework in Frameworks */,
+				EBA51C821E8BC6F7005B7E8E /* AssetsLibrary.framework in Frameworks */,
+				EB7863541E48589200271B29 /* SystemConfiguration.framework in Frameworks */,
+				EB3A98E01E1CC82200FD269A /* MapKit.framework in Frameworks */,
+				EB2BEA111E1A0E1E00377579 /* CoreGraphics.framework in Frameworks */,
+				EB0206281E18E64F00D79DC2 /* CoreLocation.framework in Frameworks */,
+				EB0206061E18DA0B00D79DC2 /* Foundation.framework in Frameworks */,
+				EB0206081E18DA0B00D79DC2 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB0205F81E18DA0B00D79DC2 = {
+			isa = PBXGroup;
+			children = (
+				EB0206091E18DA0B00D79DC2 /* DingTalkDylib */,
+				EB0206041E18DA0B00D79DC2 /* Frameworks */,
+				EB0206031E18DA0B00D79DC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB0206031E18DA0B00D79DC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB0206021E18DA0B00D79DC2 /* libDingTalkDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB0206041E18DA0B00D79DC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBA51C831E8BC700005B7E8E /* AVFoundation.framework */,
+				EBA51C811E8BC6F7005B7E8E /* AssetsLibrary.framework */,
+				EB7863531E48589200271B29 /* SystemConfiguration.framework */,
+				EB3A98DF1E1CC82200FD269A /* MapKit.framework */,
+				EB2BEA101E1A0E1E00377579 /* CoreGraphics.framework */,
+				EB0206271E18E64F00D79DC2 /* CoreLocation.framework */,
+				EB0206051E18DA0B00D79DC2 /* Foundation.framework */,
+				EB0206071E18DA0B00D79DC2 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB0206091E18DA0B00D79DC2 /* DingTalkDylib */ = {
+			isa = PBXGroup;
+			children = (
+				EBA51C481E8BADB3005B7E8E /* Vendors */,
+				EB0B1E881E305420007A15A7 /* View */,
+				EB0B1E781E305418007A15A7 /* Category */,
+				EB0206221E18DABF00D79DC2 /* Util */,
+				EB0B1E8E1E305426007A15A7 /* GPS */,
+				EB7863331E4809F900271B29 /* WIFI */,
+				EBA51C771E8BAE3C005B7E8E /* Camera */,
+				EB0206111E18DA0B00D79DC2 /* DingTalkDylib.h */,
+				EB0206131E18DA0B00D79DC2 /* DingTalkDylib.m */,
+				EB02060A1E18DA0B00D79DC2 /* Package */,
+				EB02060E1E18DA0B00D79DC2 /* Supporting Files */,
+			);
+			path = DingTalkDylib;
+			sourceTree = "<group>";
+		};
+		EB02060A1E18DA0B00D79DC2 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				EB02060B1E18DA0B00D79DC2 /* DEBIAN */,
+				EB0206151E18DA0B00D79DC2 /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		EB02060B1E18DA0B00D79DC2 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				EB02060C1E18DA0B00D79DC2 /* control.txt */,
+				EB02060D1E18DA0B00D79DC2 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		EB02060E1E18DA0B00D79DC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB02060F1E18DA0B00D79DC2 /* PackageVersion.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB0206151E18DA0B00D79DC2 /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				EB0206161E18DA0B00D79DC2 /* lib */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		EB0206161E18DA0B00D79DC2 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				EB0206171E18DA0B00D79DC2 /* 0xdeadfa11 */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		EB0206221E18DABF00D79DC2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				EB7863751E487D2500271B29 /* JFFishHook */,
+				EB2BEA0B1E1A0CDD00377579 /* JF_Helper */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		EB0B1E781E305418007A15A7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				EB6CDFBC1E34B1230080F13F /* UIResponder+JFUtil */,
+				EB0B1E791E305418007A15A7 /* CLLocationManager+Util */,
+				EB0B1E7C1E305418007A15A7 /* NSBundle+JFUtil */,
+				EB0B1E7F1E305418007A15A7 /* UIApplication+JFUtil */,
+				EBA51C8C1E8BD087005B7E8E /* UIImage+JFUtil */,
+				EBA51C951E8BD668005B7E8E /* AVCaptureStillImageOutput+JFUtil */,
+				EBA51C9A1E8BDD85005B7E8E /* ALAsset+JFUtil */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		EB0B1E791E305418007A15A7 /* CLLocationManager+Util */ = {
+			isa = PBXGroup;
+			children = (
+				EB0B1E7A1E305418007A15A7 /* CLLocationManager+JFUtil.h */,
+				EB0B1E7B1E305418007A15A7 /* CLLocationManager+JFUtil.m */,
+			);
+			path = "CLLocationManager+Util";
+			sourceTree = "<group>";
+		};
+		EB0B1E7C1E305418007A15A7 /* NSBundle+JFUtil */ = {
+			isa = PBXGroup;
+			children = (
+				EB0B1E7D1E305418007A15A7 /* NSBundle+JFUtil.h */,
+				EB0B1E7E1E305418007A15A7 /* NSBundle+JFUtil.m */,
+			);
+			path = "NSBundle+JFUtil";
+			sourceTree = "<group>";
+		};
+		EB0B1E7F1E305418007A15A7 /* UIApplication+JFUtil */ = {
+			isa = PBXGroup;
+			children = (
+				EB0B1E801E305418007A15A7 /* UIApplication+JFUtil.h */,
+				EB0B1E811E305418007A15A7 /* UIApplication+JFUtil.m */,
+			);
+			path = "UIApplication+JFUtil";
+			sourceTree = "<group>";
+		};
+		EB0B1E881E305420007A15A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB0B1E891E305420007A15A7 /* DTGPSButton */,
+				EB7863451E480E0E00271B29 /* DTWifiHeaderView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB0B1E891E305420007A15A7 /* DTGPSButton */ = {
+			isa = PBXGroup;
+			children = (
+				EB0B1E8A1E305420007A15A7 /* DTGPSButton.h */,
+				EB0B1E8B1E305420007A15A7 /* DTGPSButton.m */,
+			);
+			path = DTGPSButton;
+			sourceTree = "<group>";
+		};
+		EB0B1E8E1E305426007A15A7 /* GPS */ = {
+			isa = PBXGroup;
+			children = (
+				EB0B1E911E305426007A15A7 /* GPSSettingViewController */,
+				EB0B1E8F1E305426007A15A7 /* DTGPSHook.h */,
+				EB0B1E901E305426007A15A7 /* DTGPSHook.m */,
+			);
+			path = GPS;
+			sourceTree = "<group>";
+		};
+		EB0B1E911E305426007A15A7 /* GPSSettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EB0B1E921E305426007A15A7 /* DTGPSSettingViewController.h */,
+				EB0B1E931E305426007A15A7 /* DTGPSSettingViewController.m */,
+			);
+			path = GPSSettingViewController;
+			sourceTree = "<group>";
+		};
+		EB2BEA0B1E1A0CDD00377579 /* JF_Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EB2BEA0C1E1A0CDD00377579 /* JF_Helper.h */,
+				EB2BEA0D1E1A0CDD00377579 /* JF_Helper.m */,
+			);
+			path = JF_Helper;
+			sourceTree = "<group>";
+		};
+		EB6CDFBC1E34B1230080F13F /* UIResponder+JFUtil */ = {
+			isa = PBXGroup;
+			children = (
+				EB6CDFBD1E34B1390080F13F /* UIResponder+JFUtil.h */,
+				EB6CDFBE1E34B1390080F13F /* UIResponder+JFUtil.m */,
+			);
+			path = "UIResponder+JFUtil";
+			sourceTree = "<group>";
+		};
+		EB7863331E4809F900271B29 /* WIFI */ = {
+			isa = PBXGroup;
+			children = (
+				EB78633D1E480BAF00271B29 /* Model */,
+				EB7863381E480A7D00271B29 /* WIFISettingViewController */,
+				EB7863341E480A1600271B29 /* DTWIFIHook.h */,
+				EB7863351E480A1600271B29 /* DTWIFIHook.m */,
+			);
+			path = WIFI;
+			sourceTree = "<group>";
+		};
+		EB7863381E480A7D00271B29 /* WIFISettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EB7863391E480AA200271B29 /* DTWifiSettingViewController.h */,
+				EB78633A1E480AA200271B29 /* DTWifiSettingViewController.m */,
+			);
+			path = WIFISettingViewController;
+			sourceTree = "<group>";
+		};
+		EB78633D1E480BAF00271B29 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB78633E1E480BD200271B29 /* DTWifiModel.h */,
+				EB78633F1E480BD200271B29 /* DTWifiModel.m */,
+				EB78634F1E48460700271B29 /* DTWifiSettingSession.h */,
+				EB7863501E48460700271B29 /* DTWifiSettingSession.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB7863451E480E0E00271B29 /* DTWifiHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				EB7863461E480E0E00271B29 /* DTWifiHeaderView.h */,
+				EB7863471E480E0E00271B29 /* DTWifiHeaderView.m */,
+			);
+			path = DTWifiHeaderView;
+			sourceTree = "<group>";
+		};
+		EB7863751E487D2500271B29 /* JFFishHook */ = {
+			isa = PBXGroup;
+			children = (
+				EB7863761E487D2500271B29 /* JFFishHook.c */,
+				EB7863771E487D2500271B29 /* JFFishHook.h */,
+			);
+			path = JFFishHook;
+			sourceTree = "<group>";
+		};
+		EBA51C481E8BADB3005B7E8E /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+				EBA51C491E8BADB3005B7E8E /* QBImagePickerController */,
+			);
+			path = Vendors;
+			sourceTree = "<group>";
+		};
+		EBA51C491E8BADB3005B7E8E /* QBImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				EBA51C4A1E8BADB3005B7E8E /* Assets */,
+				EBA51C4E1E8BADB3005B7E8E /* Classes */,
+			);
+			path = QBImagePickerController;
+			sourceTree = "<group>";
+		};
+		EBA51C4A1E8BADB3005B7E8E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EBA51C4B1E8BADB3005B7E8E /* QBImagePickerController.strings */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		EBA51C4E1E8BADB3005B7E8E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EBA51C4F1E8BADB3005B7E8E /* QBAssetsCollectionCheckmarkView.h */,
+				EBA51C501E8BADB3005B7E8E /* QBAssetsCollectionCheckmarkView.m */,
+				EBA51C511E8BADB3005B7E8E /* QBAssetsCollectionFooterView.h */,
+				EBA51C521E8BADB3005B7E8E /* QBAssetsCollectionFooterView.m */,
+				EBA51C531E8BADB3005B7E8E /* QBAssetsCollectionOverlayView.h */,
+				EBA51C541E8BADB3005B7E8E /* QBAssetsCollectionOverlayView.m */,
+				EBA51C551E8BADB3005B7E8E /* QBAssetsCollectionVideoIndicatorView.h */,
+				EBA51C561E8BADB3005B7E8E /* QBAssetsCollectionVideoIndicatorView.m */,
+				EBA51C571E8BADB3005B7E8E /* QBAssetsCollectionViewCell.h */,
+				EBA51C581E8BADB3005B7E8E /* QBAssetsCollectionViewCell.m */,
+				EBA51C591E8BADB3005B7E8E /* QBAssetsCollectionViewController.h */,
+				EBA51C5A1E8BADB3005B7E8E /* QBAssetsCollectionViewController.m */,
+				EBA51C5B1E8BADB3005B7E8E /* QBAssetsCollectionViewLayout.h */,
+				EBA51C5C1E8BADB3005B7E8E /* QBAssetsCollectionViewLayout.m */,
+				EBA51C5D1E8BADB3005B7E8E /* QBImagePickerController.h */,
+				EBA51C5E1E8BADB3005B7E8E /* QBImagePickerController.m */,
+				EBA51C5F1E8BADB3005B7E8E /* QBImagePickerGroupCell.h */,
+				EBA51C601E8BADB3005B7E8E /* QBImagePickerGroupCell.m */,
+				EBA51C611E8BADB3005B7E8E /* QBImagePickerThumbnailView.h */,
+				EBA51C621E8BADB3005B7E8E /* QBImagePickerThumbnailView.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EBA51C771E8BAE3C005B7E8E /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				EBA51C7C1E8BB061005B7E8E /* CameraSettingViewController */,
+				EBA51C781E8BAE59005B7E8E /* DTCameraHook.h */,
+				EBA51C791E8BAE59005B7E8E /* DTCameraHook.m */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		EBA51C7C1E8BB061005B7E8E /* CameraSettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EBA51C7D1E8BB07D005B7E8E /* DTCameraSettingViewController.h */,
+				EBA51C7E1E8BB07D005B7E8E /* DTCameraSettingViewController.m */,
+			);
+			path = CameraSettingViewController;
+			sourceTree = "<group>";
+		};
+		EBA51C8C1E8BD087005B7E8E /* UIImage+JFUtil */ = {
+			isa = PBXGroup;
+			children = (
+				EBA51C8D1E8BD087005B7E8E /* UIImage+JFUtil.h */,
+				EBA51C8E1E8BD087005B7E8E /* UIImage+JFUtil.m */,
+			);
+			path = "UIImage+JFUtil";
+			sourceTree = "<group>";
+		};
+		EBA51C951E8BD668005B7E8E /* AVCaptureStillImageOutput+JFUtil */ = {
+			isa = PBXGroup;
+			children = (
+				EBA51C961E8BD668005B7E8E /* AVCaptureStillImageOutput+JFUtil.h */,
+				EBA51C971E8BD668005B7E8E /* AVCaptureStillImageOutput+JFUtil.m */,
+			);
+			path = "AVCaptureStillImageOutput+JFUtil";
+			sourceTree = "<group>";
+		};
+		EBA51C9A1E8BDD85005B7E8E /* ALAsset+JFUtil */ = {
+			isa = PBXGroup;
+			children = (
+				EBA51C9B1E8BDD85005B7E8E /* ALAsset+JFUtil.h */,
+				EBA51C9C1E8BDD85005B7E8E /* ALAsset+JFUtil.m */,
+			);
+			path = "ALAsset+JFUtil";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EB0205FF1E18DA0B00D79DC2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA51C9D1E8BDD85005B7E8E /* ALAsset+JFUtil.h in Headers */,
+				EBA51C8F1E8BD087005B7E8E /* UIImage+JFUtil.h in Headers */,
+				EB0B1E861E305418007A15A7 /* UIApplication+JFUtil.h in Headers */,
+				EB0B1E961E305426007A15A7 /* DTGPSSettingViewController.h in Headers */,
+				EBA51C6D1E8BADB3005B7E8E /* QBAssetsCollectionViewController.h in Headers */,
+				EBA51C751E8BADB3005B7E8E /* QBImagePickerThumbnailView.h in Headers */,
+				EB6CDFBF1E34B1390080F13F /* UIResponder+JFUtil.h in Headers */,
+				EBA51C6B1E8BADB3005B7E8E /* QBAssetsCollectionViewCell.h in Headers */,
+				EBA51C651E8BADB3005B7E8E /* QBAssetsCollectionFooterView.h in Headers */,
+				EB0B1E821E305418007A15A7 /* CLLocationManager+JFUtil.h in Headers */,
+				EB78633B1E480AA200271B29 /* DTWifiSettingViewController.h in Headers */,
+				EB7863361E480A1600271B29 /* DTWIFIHook.h in Headers */,
+				EB2BEA0E1E1A0CDD00377579 /* JF_Helper.h in Headers */,
+				EBA51C711E8BADB3005B7E8E /* QBImagePickerController.h in Headers */,
+				EBA51C691E8BADB3005B7E8E /* QBAssetsCollectionVideoIndicatorView.h in Headers */,
+				EBA51C631E8BADB3005B7E8E /* QBAssetsCollectionCheckmarkView.h in Headers */,
+				EBA51C7A1E8BAE59005B7E8E /* DTCameraHook.h in Headers */,
+				EB7863401E480BD200271B29 /* DTWifiModel.h in Headers */,
+				EB0206121E18DA0B00D79DC2 /* DingTalkDylib.h in Headers */,
+				EBA51C981E8BD668005B7E8E /* AVCaptureStillImageOutput+JFUtil.h in Headers */,
+				EB7863791E487D2500271B29 /* JFFishHook.h in Headers */,
+				EBA51C671E8BADB3005B7E8E /* QBAssetsCollectionOverlayView.h in Headers */,
+				EB0B1E941E305426007A15A7 /* DTGPSHook.h in Headers */,
+				EB0B1E841E305418007A15A7 /* NSBundle+JFUtil.h in Headers */,
+				EB0B1E8C1E305420007A15A7 /* DTGPSButton.h in Headers */,
+				EB78634A1E480E0E00271B29 /* DTWifiHeaderView.h in Headers */,
+				EB7863511E48460700271B29 /* DTWifiSettingSession.h in Headers */,
+				EBA51C7F1E8BB07D005B7E8E /* DTCameraSettingViewController.h in Headers */,
+				EBA51C6F1E8BADB3005B7E8E /* QBAssetsCollectionViewLayout.h in Headers */,
+				EBA51C731E8BADB3005B7E8E /* QBImagePickerGroupCell.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EB0206011E18DA0B00D79DC2 /* DingTalkDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB02061A1E18DA0B00D79DC2 /* Build configuration list for PBXNativeTarget "DingTalkDylib" */;
+			buildPhases = (
+				EB0205FD1E18DA0B00D79DC2 /* Sources */,
+				EB0205FE1E18DA0B00D79DC2 /* Frameworks */,
+				EB0205FF1E18DA0B00D79DC2 /* Headers */,
+				EB0206001E18DA0B00D79DC2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DingTalkDylib;
+			productName = DingTalkDylib;
+			productReference = EB0206021E18DA0B00D79DC2 /* libDingTalkDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB0205F91E18DA0B00D79DC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					EB0206011E18DA0B00D79DC2 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 52C773W3RU;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EB0205FC1E18DA0B00D79DC2 /* Build configuration list for PBXProject "DingTalkDylib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				ja,
+			);
+			mainGroup = EB0205F81E18DA0B00D79DC2;
+			productRefGroup = EB0206031E18DA0B00D79DC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB0206011E18DA0B00D79DC2 /* DingTalkDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EB0206001E18DA0B00D79DC2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB0205FD1E18DA0B00D79DC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB7863521E48460700271B29 /* DTWifiSettingSession.m in Sources */,
+				EBA51C901E8BD087005B7E8E /* UIImage+JFUtil.m in Sources */,
+				EB78633C1E480AA200271B29 /* DTWifiSettingViewController.m in Sources */,
+				EB6CDFC01E34B1390080F13F /* UIResponder+JFUtil.m in Sources */,
+				EB78634B1E480E0E00271B29 /* DTWifiHeaderView.m in Sources */,
+				EB0B1E871E305418007A15A7 /* UIApplication+JFUtil.m in Sources */,
+				EBA51C661E8BADB3005B7E8E /* QBAssetsCollectionFooterView.m in Sources */,
+				EBA51C6E1E8BADB3005B7E8E /* QBAssetsCollectionViewController.m in Sources */,
+				EB0B1E951E305426007A15A7 /* DTGPSHook.m in Sources */,
+				EBA51C641E8BADB3005B7E8E /* QBAssetsCollectionCheckmarkView.m in Sources */,
+				EBA51C801E8BB07D005B7E8E /* DTCameraSettingViewController.m in Sources */,
+				EBA51C721E8BADB3005B7E8E /* QBImagePickerController.m in Sources */,
+				EBA51C6C1E8BADB3005B7E8E /* QBAssetsCollectionViewCell.m in Sources */,
+				EB7863411E480BD200271B29 /* DTWifiModel.m in Sources */,
+				EBA51C991E8BD668005B7E8E /* AVCaptureStillImageOutput+JFUtil.m in Sources */,
+				EBA51C741E8BADB3005B7E8E /* QBImagePickerGroupCell.m in Sources */,
+				EBA51C7B1E8BAE59005B7E8E /* DTCameraHook.m in Sources */,
+				EBA51C761E8BADB3005B7E8E /* QBImagePickerThumbnailView.m in Sources */,
+				EBA51C681E8BADB3005B7E8E /* QBAssetsCollectionOverlayView.m in Sources */,
+				EBA51C6A1E8BADB3005B7E8E /* QBAssetsCollectionVideoIndicatorView.m in Sources */,
+				EB0B1E851E305418007A15A7 /* NSBundle+JFUtil.m in Sources */,
+				EB0B1E8D1E305420007A15A7 /* DTGPSButton.m in Sources */,
+				EB2BEA0F1E1A0CDD00377579 /* JF_Helper.m in Sources */,
+				EB0B1E831E305418007A15A7 /* CLLocationManager+JFUtil.m in Sources */,
+				EB0B1E971E305426007A15A7 /* DTGPSSettingViewController.m in Sources */,
+				EBA51C9E1E8BDD85005B7E8E /* ALAsset+JFUtil.m in Sources */,
+				EB0206141E18DA0B00D79DC2 /* DingTalkDylib.m in Sources */,
+				EB7863371E480A1600271B29 /* DTWIFIHook.m in Sources */,
+				EBA51C701E8BADB3005B7E8E /* QBAssetsCollectionViewLayout.m in Sources */,
+				EB7863781E487D2500271B29 /* JFFishHook.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EBA51C4B1E8BADB3005B7E8E /* QBImagePickerController.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBA51C4C1E8BADB3005B7E8E /* en */,
+				EBA51C4D1E8BADB3005B7E8E /* ja */,
+			);
+			name = QBImagePickerController.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB0206181E18DA0B00D79DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		EB0206191E18DA0B00D79DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		EB02061B1E18DA0B00D79DC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 52C773W3RU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INSTALL_PATH = /usr/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		EB02061C1E18DA0B00D79DC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 52C773W3RU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INSTALL_PATH = /usr/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB0205FC1E18DA0B00D79DC2 /* Build configuration list for PBXProject "DingTalkDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB0206181E18DA0B00D79DC2 /* Debug */,
+				EB0206191E18DA0B00D79DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB02061A1E18DA0B00D79DC2 /* Build configuration list for PBXNativeTarget "DingTalkDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB02061B1E18DA0B00D79DC2 /* Debug */,
+				EB02061C1E18DA0B00D79DC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB0205F91E18DA0B00D79DC2 /* Project object */;
+}
